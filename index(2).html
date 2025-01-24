@@ -1,139 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>registration</title>
+<html>
+<head>
+<title>The First Website Frontline</title>
+</head>
+
 <body>
-<h1 id="title">My Story</h1>
-<p id="description">Please fill out this following survey form</p>
-<form id="survey-form">
+<h1 class="word">The Website</h1>
+<h2 class="word">Character</h2>
 
-<fieldset>
-<legend>You do it here: </legend>
-<label for="name" id="name-label">fill out your first name: </label>
-<input type="text" id="name" placeholder="e.g. Taylor" required>
-
-
-<br></br>
-<label for="last name" id="name-label">fill out your last name: </label>
-<input type="text" id="last name" placeholder="e.g. Swift" required>
-
-<br></br>
-<label for="email" id="email-label">enter your email: </label>
-<input type="email" id="email"  placeholder="taylorswift@gmail.com" required>
-
-<br></br>
-<label for="number" id="number-label">enter your age: </label>
-<input type="number" min="5" max="1001" id="number" placeholder="15" required>
-
-<br></br>
-<label for="dropdown">select your purpose: </label>
-<select id="dropdown" >
-  <option name="1">select here</option>
-  <option name="2">Personal</option>
-  <option name="3">Business, baby</option>  
-</select>
+<fieldset class="box">
+<p class="word">Hello, my name is Spark and my mom's name is called...private</p>
+	
 
 </fieldset>
 
-
-<p>Yeah, good job, continue...</p>
-<fieldset>
-<legend>Do it again</legend>
-<p class="thing">Tell me your feelings now. it is: </p>
-<input type="radio" name="feeling" id="happy" value="feeling1">
-<label for="happy">Happy</label>
-<input type="radio" name="feeling" id="happy2" value="feeling2">
-<label for="happy2">Happy</label>
-<input type="radio" name="feeling" id="Spark's feeling" value="feeling3">
-<label for="Spark's feeling">Starry Night</label>
-
+<fieldset class="box">
+<div>
+<h2 class="word">The Story</h2>
+</div>
+<p class="word">My story is a bit sorry. I was born in Hongkong, but raised in Shanghai. 
+I study in somewhere else during elementary years, and I return back to Shanghai at 4th grade.
+I then, after studying in Shanghai for 4 years, came to Munich. And that's when my time came.
+</p>
 </fieldset>
-
-<p>Why not continue bruh...</p>
-<fieldset>
-<legend>And again...</legend>
-<p class="thing">Tell me what is your crush type: </p>
-
-<input type="checkbox" name="crush type" id="Blonde" value="blonde type like Jolie">
-<label for="Blonde">Blonde</label>
-<input type="checkbox" name="crush type" id="Brown hair" value="brown hair type like Marie">
-<label for="Brown hair">Brown hair</label>
-<input type="checkbox" name="crush type" id="Mix color" value="mixed hair color type">
-<label for="Mix color">Mix color</label>
-
-
-</fieldset>
-
-<p>Okaay, this is the last one, I promise...</p>
-
-<fieldset>
-<legend>We ready to Rock'n Roll(No I like pop)...</legend>
-<label for="writing place">Write what you want: </label><br>
-<textarea id="writing place" name="writing place" rows="5" cols="35" placeholder="Write Here"></textarea>
-
-</fieldset>
-
-<br></br>
-<form id="survery-form">
- <button id="submit" class="submit-button-Spark" type="submit" >Submit</button>
-</form>
-</form>
-
+	
 </body>
 
 <style>
-body{
-  font-family: optima;
-  background-color: RGB(150, 50, 255);
+Body{
+	background-color: rgb(50, 200, 200);
+	margin: auto;
+
+}
+.word{
+	font-color= rgb(50, 200, 150);
+	font-family: optima;
+	text-align: center;
 }
 
-fieldset{
-  background-color: rgb(50, 50, 255);
-  border-radius: 15.6px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  padding: 1.5em;
-  border: 2px solid white;
-  margin: 0 auto;
-  width: 500px;
-  max-width: 85%;
+.box{
+	background-color: rgb(50, 175, 175);
+	margin: 10px;
+	border-color: rgb(90, 175, 175)
+ 	width: 50%; /* Adjust the width as needed */
+        margin: auto; /* Center the fieldset */
 }
-
-h1, p, label{
-  color: white;
-  text-align: center;
-  margin: 16px 0;
+h2{
+	padding: auto;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
 }
-
-legend{
-  color: white;
-}
-
-.thing{
-  text-align: left;
-}
-
-input, select, textarea, radio, checkbox {
-  background-color: rgb(220, 200, 255); 
-  border-radius: 6px;
-  border: 2px solid white;
-}
-
-.submit-button-Spark{
-  display: flex;
-  padding: 9px 14px;
-  font-size: 17px;
-  border-radius: 11px;
-  font-family: Optima;
-  font-weight: bold;
-  background-color: rgb(200, 150, 220);
-  margin: 19px auto;
-  border: 3px solid white;
-}
-
+	
 </style>
-
-
-
-
 
 
 </html>
